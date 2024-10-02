@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login El Barquero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body class="container">
+    <div class="login">
+      <div class="character">
+        <!--Noche-->
+        <div class="layer-1">
+          <div class="spaceContainer">
+          <div class="space space-1"></div>
+          <div class="space space-2"></div>
+          <div class="space space-3"></div>
+          <div class="space space-4"></div>
+        </div>
+        </div>
+        <!--Luna-->
+        <div class="layer-2"></div>
+        <!--Montaña1-->
+        <div class="layer-3"></div>
+        <div class="layer-4"></div>
+        <div class="layer-5"></div>
+        <div class="layer-6"></div>
+        <!--Montaña2-->
+        <div class="layer-7"></div>
+        <div class="layer-8"></div>
+        <div class="layer-9"></div>
+        <div class="layer-10"></div>
+        <!--Agua1-->
+        <div class="layer-11">
+          <div class="wave1"></div>
+          <div class="wave2"></div>
+        </div>
+        <!--Personaje-->
+        <div class="layer-12">
+          <div class="hood">
+            <div class="head">
+              <div class="leftEyelid" id="leftEyelid"> </div>
+              <div class="leftEye" >
+                <div class="pupil1" id="pupil1">
+                  <div class="iris1" id="iris1"></div>
+                </div>
+              </div>
+              <div class="rigthEyelid" id="rigthEyelid"></div>
+              <div class="rigthEye">
+                <div class="pupil2" id="pupil2">
+                  <div class="iris2" id="iris2"></div>
+                </div>
+              </div>
+              <div class="nose1"></div>
+              <div class="nose2"></div>
+              <div class="mouth"></div>
+            </div>
+          </div>
+          <div class="body">
+            <div class="leftArm">
+              <div class="leftHand"></div>
+            </div>
+            <div class="rigthArm1"></div>
+            <div class="rigthArm2"></div>
+          </div>
+        </div>
+        <!--Barca-->
+        <div class="layer-13">
+          <div class="point1"></div>
+          <div class="point2"></div>
+          <div class="boat"></div>
+        </div>
+        <!--Palo-->
+        <div class="layer-14">
+          <div class="stick"></div>
+          <div class="rigthHand"></div>
+        </div>
+        <!--Agua2-->
+        <div class="layer-15">
+          <div class="wave3"></div>
+        </div>
+      </div>
+      <h3 class="title">El Barquero</h3>
+      <form action="">
+        <!--Input email-->
+        <div class="userContainer">
+          <input
+            type="email"
+            id="user"
+            placeholder="Email"
+            autocomplete="off"
+          />
+          <img
+            src="./images/papelera.png"
+            alt="papelera"
+            class="icon"
+            id="trash"
+            onclick="borrar()"
+          />
+        </div>
+        <!--Input password-->
+        <div class="passwordContainer">
+          <input
+            type="password"
+            id="user-password"
+            placeholder="Password"
+            autocomplete="off"
+          />
+          <img
+            src="./images/ojoCerrado.png"
+            alt="ojo cerrado"
+            class="icon"
+            id="eyeCheck"
+            onclick="check()"
+          />
+          <img
+            src="./images/papelera.png"
+            alt="papelera"
+            class="icon"
+            onclick="borrarPass()"
+          />
+        </div>
+        <!--Button login-->
+        <div class="buttonContainer">
+          <button type="submit" class="button">Login</button>
+        </div>
+        <p class="parraf1">Or <a href="">create an account</a></p>
+        <p class="parraf2">-Created by Cris Muñiz-</p>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
